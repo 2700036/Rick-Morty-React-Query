@@ -52,7 +52,7 @@ function CharacterDetails({ match }: DetailsProps) {
                   data.episode.map((ep, i, arr) => {
                     return (
                       <>
-                        <DetailsItem<Episode> itemUrl={ep} />
+                        <DetailsItem<Episode> itemUrl={ep} key={ep+i} />
                         {i === arr.indexOf(arr[arr.length - 1]) ? '.' : ', '}
                       </>
                     );
